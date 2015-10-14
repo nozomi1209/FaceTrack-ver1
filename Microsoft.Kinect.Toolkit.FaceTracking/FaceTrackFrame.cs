@@ -26,12 +26,6 @@ namespace Microsoft.Kinect.Toolkit.FaceTracking
         {
             if (faceTrackResultPtr == null)
             {
-                //===============================================================//   
-                using (StreamWriter sw = new StreamWriter(@"C:\Users\Public\WTF.txt", true))
-                {
-                    sw.WriteLine("Cannot associate with a null native frame pointer");       //wiriting text to existing file WTF.txt.
-                }
-                //===============================================================//   
                 throw new InvalidOperationException("Cannot associate with a null native frame pointer");
             }
 
@@ -82,9 +76,16 @@ namespace Microsoft.Kinect.Toolkit.FaceTracking
         /// Returns a flag if the tracking was successful or not on last tracking call
         /// </summary>
         public bool TrackSuccessful
-        {
+        {           
             get
             {
+                //===============================================================//   
+                using (StreamWriter sw = new StreamWriter(@"C:\Users\Public\WTF.txt", true))
+                {
+                    sw.WriteLine("//=======TrackSuccessful!!=======//");
+                }
+                //===============================================================// 
+
                 return this.Status == ErrorCode.Success;
             }
         }
