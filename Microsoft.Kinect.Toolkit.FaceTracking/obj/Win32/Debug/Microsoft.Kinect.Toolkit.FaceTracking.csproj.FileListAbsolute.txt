@@ -1,0 +1,7 @@
+E:\CLH\NCTU\專題\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\FaceTrackData.dll
+E:\CLH\NCTU\專題\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\FaceTrackLib.dll
+E:\CLH\NCTU\專題\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\Microsoft.Kinect.Toolkit.FaceTracking.dll
+E:\CLH\NCTU\專題\Microsoft.Kinect.Toolkit.FaceTracking\bin\x86\Debug\Microsoft.Kinect.Toolkit.FaceTracking.pdb
+E:\CLH\NCTU\專題\Microsoft.Kinect.Toolkit.FaceTracking\obj\Win32\Debug\Microsoft.Kinect.Toolkit.FaceTracking.csprojResolveAssemblyReference.cache
+E:\CLH\NCTU\專題\Microsoft.Kinect.Toolkit.FaceTracking\obj\Win32\Debug\Microsoft.Kinect.Toolkit.FaceTracking.dll
+E:\CLH\NCTU\專題\Microsoft.Kinect.Toolkit.FaceTracking\obj\Win32\Debug\Microsoft.Kinect.Toolkit.FaceTracking.pdb
