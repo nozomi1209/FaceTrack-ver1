@@ -26,14 +26,7 @@ namespace Microsoft.Kinect.Toolkit.FaceTracking
         {
             if (faceTracker == null || faceModelPtr == null)
             {
-                //===============================================================//   
-                using (StreamWriter sw = new StreamWriter(@"C:\Users\Public\WTF.txt", true))
-                {
-                    sw.WriteLine("Cannot associate face model with null face tracker or native face model reference");       //wiriting text to existing file WTF.txt.
-                }
-                //===============================================================//   
-
-                throw new InvalidOperationException("Cannot associate face model with null face tracker or native face model reference");
+                 throw new InvalidOperationException("Cannot associate face model with null face tracker or native face model reference");
             }
 
             this.faceTrackingModelPtr = faceModelPtr;
@@ -155,9 +148,11 @@ namespace Microsoft.Kinect.Toolkit.FaceTracking
                         trianglesIthPtr = new IntPtr(trianglesPtr.ToInt32() + (i * Marshal.SizeOf(typeof(FaceTriangle))));
                     }
                     triangles[i] = (FaceTriangle)Marshal.PtrToStructure(trianglesIthPtr, typeof(FaceTriangle));
+                //===========================//
+                    triangles[i].OutputTriangle();
+               //===========================//
               }
             }
-    
             return triangles;
         }
 

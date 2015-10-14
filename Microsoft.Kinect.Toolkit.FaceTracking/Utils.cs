@@ -7,6 +7,7 @@
 namespace Microsoft.Kinect.Toolkit.FaceTracking
 {
     using System;
+    using System.IO;
     using System.Diagnostics;
     using System.Runtime.InteropServices;
 
@@ -495,5 +496,14 @@ namespace Microsoft.Kinect.Toolkit.FaceTracking
         {
             return this.first == other.first && this.second == other.second && this.third == other.third;
         }
+
+        public void OutputTriangle() 
+        {
+            using (StreamWriter sw = new StreamWriter(@"C:\Users\Public\WTF.txt", true))
+            {
+                sw.WriteLine("Triangle:\t"+first+"\t"+second+"\t"+third);
+            }
+        }
+
     }
 }
